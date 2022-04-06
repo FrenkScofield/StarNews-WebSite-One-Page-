@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="head">
+
+        <header>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="nav-item dropdown">
+                            <div class=" dropdown-toggle lightmode">İSTANBUL
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Adana</a>
+                                    <a href="#" class="dropdown-item">Mus</a>
+                                    <a href="#" class="dropdown-item">Samsun</a>
+                                    <a href="#" class="dropdown-item">Ismir</a>
+                                    <a href="#" class="dropdown-item">Ankara</a>
+                                </div>
+                            </div> <span class="lightmode">13°C / 8°C</span>
+                        </div>
+                        <div class="weatherInfo lightmode">
+                            Parçalı bulutlu, güneşli
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a class="mainIcon" href="/">
+                            <div class="Logo"></div>
+                        </a>
+                        <div class="dateInfo lightmode">4 Nisan 2022 Pazartesi / 3 Ramazan 1443</div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="spesficContainer">
+                            <div class="mornigNight ">
+                                <button class="btn-toggle" id="btnMod"> Gece Modu</button>
+                            </div>
+                            <!-- <button data-toggle-theme="dark,light" data-act-class="ACTIVECLASS"></button> -->
+                            <div class="nav-item dropdown cityTime ">
+                                <div class=" dropdown-toggle lightmode">İSTANBUL
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">Adana</a>
+                                        <a href="#" class="dropdown-item">Mus</a>
+                                        <a href="#" class="dropdown-item">Samsun</a>
+                                        <a href="#" class="dropdown-item">Ismir</a>
+                                        <a href="#" class="dropdown-item">Ankara</a>
+                                    </div>
+                                </div>
+                                <span id="clock" class="lightmode"></span>
+                            </div>
+                            <div class="namazInfo ">
+                                <span class="lightmode">vakitine kalan süre</span><span id="namazTime"
+                                    class="namazName lightmode">Ikindi </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Navbar Start -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class=" navbar-expand-lg  ">
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active lightmode">
+                                    <a href="#">SON DAKİKA </a>
+                                </li>
+                                <li class="nav-item active guncel">
+                                    <a href="#">GÜNCEL </a>
+                                </li>
+                                <li class="nav-item active dunya">
+                                    <a href="#">DÜNYA </a>
+                                </li>
+                                <li class="nav-item active eco">
+                                    <a href="#">EKONOMİ </a>
+                                </li>
+                                <li class="nav-item spor active">
+                                    <a href="#">SPOR </a>
+                                </li>
+                                <li class="nav-item yasam active">
+                                    <a href="#">YAŞAM </a>
+                                </li>
+                                <li class="nav-item bilim active">
+                                    <a href="#">BİLİM-TEKNOLOJİ </a>
+                                </li>
+                                <li class="nav-item active acik">
+                                    <a href="#">AÇIK GÖRÜŞ </a>
+                                </li>
+                                <li class="nav-item active yazar">
+                                    <a href="#">YAZARLAR </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Currency exchange and social media section Start -->
+        <div class="exchangePath">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="moneyCourse">
+                            <ul class="list-group list-group-horizontal-xl">
+                                <li class="list-group-item">DOLAR<span>14,7239</span></li>
+                                <li class="list-group-item">EURO<span>16,1137</span></li>
+                                <li class="list-group-item">ALTIN<span>912.928</span></li>
+                                <li class="list-group-item">BIST100<span>2316.66</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="networkLive">
+
+                            <ul class="list-group list-group-horizontal-xl">
+                                <li class="list-group-item imgLi"> <a href="http:/"><img class="photo"
+                                            src="./Img/icons/photo-gallery-icon-verctor-10.jpg" />FOTO GALERİ</a> </li>
+                                <li class="list-group-item onlVid"> <a href="/"><img class="video"
+                                            src="https://img.icons8.com/ios-filled/50/000000/video.png" />VİDEO
+                                        GALERİ</a> </li>
+                                <li class="list-group-item Liv"><a href="/"><img class="live"
+                                            src="./Img/icons/444.png" />CANLI YAYIN</a> </li>
+                                <li class="list-group-item"> <a href=""><img class="fb"
+                                            src="https://img.icons8.com/material-outlined/24/000000/facebook-circled--v1.png" /></a>
+                                </li>
+                                <li class="list-group-item netvorkMarginLi"><a href=""><img class="tivtter"
+                                            src="https://img.icons8.com/material-rounded/24/000000/twitter-squared.png" /></a>
+                                </li>
+                                <li class="list-group-item"><a href=""><img class="instaYotube"
+                                            src="https://img.icons8.com/material-outlined/24/000000/instagram-new--v1.png" /></a>
+                                </li>
+                                <li class="list-group-item netvorkMarginLi"><a href=""><img class="instaYotube"
+                                            src="https://img.icons8.com/material-rounded/24/000000/youtube-play.png" /></a>
+                                </li>
+                                <li class="list-group-item searcLi "><a href=""><img class="searcIc"
+                                            src="./Img/icons/searchicon.png" /></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Currency exchange and social media section End -->
+
+        <!-- Breaking news section Start -->
+        <div class="breakingNews">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1">
+                        <div class="LestMinut">
+                            <a href="/">
+                                <p>SON</p>
+                                <p>DAKİKA</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="swiper_rap">
+                            <div class="slider-wrapper">
+                                <!-- <div class="swiper-button-prev"></div> -->
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <span class="timer">09:00-</span>Bakan Kasapoğlu açıkladı: Nisan ayı
+                                                burs ve kredi ödemeleri başladı.
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <span class="timer">19:50-</span>Bakan Kasapoğlu açıkladı: Nisan ayı
+                                                burs ve kredi ödemeleri başladı.
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <span class="timer">12:45-</span>Bakan Kasapoğlu açıkladı: Nisan ayı
+                                                burs ve kredi ödemeleri başladı.
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <span class="timer">05:10-</span>Bakan Kasapoğlu açıkladı: Nisan ayı
+                                                burs ve kredi ödemeleri başladı.
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <span class="timer">01:30-</span>Bakan Kasapoğlu açıkladı: Nisan ayı
+                                                burs ve kredi ödemeleri başladı.
+                                            </a>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <!-- <div class="swiper-button-next"></div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Breaking news section End -->
+    </section>
+    <!-- advertising section Start -->
+    <aside>
+        <div class="container">
+            <img src="./News img/Imsakiye_.png" alt="Imsakiye_">
+        </div>
+    </aside>
+    <!-- advertising section End -->
+
+    <!-- carusel and news Start -->
+    <div class="container">
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./News img/emperyalist-kapitalizm-yu-818.jpg" />
+                    <p>Bakanlar direksiyona geçti! TOGG'da önemli gelişme: Sona yaklaşıldı</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./News img/bakan-nebatiden-enflasyon-667.jpg" />
+                    <p>İtiraf gibi açıklama: Türkiye'nin önemini tekrar hatırladılar</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./News img/gozlerini-turkiyeye-cevir-472.jpg" />
+                    <p>Çarpıcı açıklama: Türkiye ile ilişkilerde yeni bir enerji var</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./News img/son-dakika-rusya-buca-idd-340.jpg" />
+                    <p>Son dakika... ABD'den yeni 'Ukrayna' kararı! Biden onay verdi</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./News img/alman-gazetesi-analiz-ett-261.jpg" />
+                    <p>Bakanlar direksiyona geçti! TOGG'da önemli gelişme: Sona yaklaşıldı</span>
+                </div>
+
+            </div>
+            <!-- <div class="swiper-button-next" style="display: none;"></div>
+               <div class="swiper-button-prev" style="display: none;"></div> -->
+        </div>
+        <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide child">
+                    <img src="./News img/emperyalist-kapitalizm-yu-818.jpg" />
+                    <h3>Bakanlar direksiyona geçti! TOGG'da önemli gelişme: Sona yaklaşıldı</h3>
+                </div>
+                <div class="swiper-slide child">
+                    <img src="./News img/bakan-nebatiden-enflasyon-667.jpg" />
+                    <h3>Bakanlar direksiyona geçti! TOGG'da önemli gelişme: Sona yaklaşıldı</h3>
+                </div>
+                <div class="swiper-slide child">
+                    <img src="./News img/gozlerini-turkiyeye-cevir-472.jpg" />
+                    <h3>Bakanlar direksiyona geçti! TOGG'da önemli gelişme: Sona yaklaşıldı</h3>
+                </div>
+                <div class="swiper-slide child">
+                    <img src="./News img/son-dakika-rusya-buca-idd-340.jpg" />
+                    <h3>Bakanlar direksiyona geçti! TOGG'da önemli gelişme: Sona yaklaşıldı</h3>
+                </div>
+                <div class="swiper-slide child">
+                    <img src="./News img/alman-gazetesi-analiz-ett-261.jpg" />
+                    <h3>Bakanlar direksiyona geçti! TOGG'da önemli gelişme: Sona yaklaşıldı</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- carusel and news End -->
+
+    <script src="script.js"></script>
+    <script src="http://www.jakse.si/test/jakse/taxi/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Coursel js start -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    </script>
+    <!-- End -->
+</body>
+
+</html>
